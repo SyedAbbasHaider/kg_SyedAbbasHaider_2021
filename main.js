@@ -1,5 +1,9 @@
 var myArg = process.argv.slice(2);
 
+if (myArg.length == 0) {
+    console.log("Please enter valid input.")
+} else {
+    
 var result = [];
 
 
@@ -30,3 +34,4 @@ for (let i = 0; i < myArg.length; i++) {
 
  console.log(result.join(', '))
 
+}
